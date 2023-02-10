@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">Email:</label>
+      <input type="text" name="email"> 
+      <label for="password">Password:</label>
+      <input type="text" name="password">
+      <label for="first_name">First name:</label>
+      <input type="text" name="first_name">
+      <label for="last_name">Last name:</label>
+      <input type="text" name="last_name">
+      <label for="birth_date">Date of birth:</label>
+      <input type="text" name="birth_date">
+      <label for="telephone_number">Telephone number:</label>
+      <input type="text" name="telephone_number">
+      <br>
+      <label for="Plans">Choose a plan:</label>
+      <br>
+      <label for="Free">Free plan</label>
+      <input type="radio" id="Free" value="Free"> 
+      <br>
+      <select id="Plans">
+      <option value="basic">Basic 9,99€</option>
+      <option value="medium">Medium 11,99€</option>
+      <option value="premium">Premium 14,99€</option> 
+      </select>
+      <label for="Deluxe">Deluxe plan</label>
+      <input type="radio" id="Deluxe" value="Deluxe"> 
+      <br>
+      <label for="CCN">Credit card number:</label>
+      <input type="CCN" name="CCN">
+      <br>
+      <label for="CVC">CVC:</label>
+      <input type="CVC" name="CVC">
+      <label for="Expiration">Expiration date:</label>
+      <input type="Expiration" name="Expiration">
+      <label for="address">Billing address:</label>
+      <input type="address" name="address"> 
+      <br>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
