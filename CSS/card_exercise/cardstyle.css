@@ -7,7 +7,7 @@
 }
 .card_container {
   width: 300px;
-  height: 615px;
+  height: 670px;
   border: 7px solid rgb(92, 78, 41);
   border-radius: 2.5%;
   -webkit-box-shadow: 5px 5px 18px 5px rgba(230, 225, 91, 0.5);
@@ -19,9 +19,10 @@
   background-color: rgb(110, 13, 37);
 }
 .description {
+  width: 90%;
   background-color: aliceblue;
   margin: 2.6%;
-  border: 2px, inset, black;
+  border: 4px inset;
 }
 #card-image {
   width: 95%;
@@ -35,8 +36,7 @@
 .stats {
   margin: 2.6%;
   color: aliceblue;
-  border: 1px, solid, black;
 }
 a {
-    color: darkgoldenrod;
-  }
+  color: darkgoldenrod;
+}
