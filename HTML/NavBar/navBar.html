@@ -4,17 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../../CSS/06 Nav/style.css" />
+    <title>CardgameClub</title>
   </head>
 
   <body>
-    <nav>
-      <h2>NavBar</h2>
-      <a href="Home">Home</a> | <a href="Link">Link</a> |
-      <a href="Dropdown">Dropdown</a>|
-      <a>Disabled</a>
-      <input type="text" name="Search" placeholder="Search" />
-      <button type="Search">Search</button>
-    </nav>
+    <main>
+      <nav>
+        <div id="navlist">
+          <a href="#">Home</a>
+          <a href="#">Buy</a>
+          <a href="#">Trade</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+
+          <div class="search">
+            <form action="#">
+              <input type="text" placeholder=" Search Courses" name="search" />
+              <button>
+                <i class="fa fa-search" style="font-size: 18px"> </i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </main>
   </body>
 </html>
