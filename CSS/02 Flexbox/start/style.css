@@ -8,6 +8,7 @@
 }
 
 .logo-placeholder {
+  width: 200px;
   height: 100px;
   background-color: #ccc;
 }
@@ -26,6 +27,9 @@ nav a {
 
 nav a:hover {
   color: #2b2bb2;
+  transition: 0.3s;
+  display: flex;
+  flex: 1;
 }
 
 .user-info {
