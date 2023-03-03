@@ -1,0 +1,30 @@
+.container {
+  max-width: 100ch;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.container h1 {
+  color: green;
+  text-decoration: 1px underline blue;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  padding: 20px;
+}
+section article {
+  border: 1px solid green;
+  padding: 10px;
+}
+section article p {
+  text-align: center;
+}
+section article:nth-child(odd) {
+  color: blue;
+}
+section article:nth-child(even) {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
