@@ -1,0 +1,32 @@
+@mixin border-styling($color, $border-color, $font-size: 1rem){
+    color: $color;
+    border: 1px solid $border-color;
+    font-size: $font-size;
+    padding: 10px;
+}
+
+.container {
+    @include border-styling(black, red);
+    margin: 1rem;
+    text-align: center;
+    h1 {
+        text-decoration: 1px underline blue;
+        color: green;
+    }
+    section:nth-child(2) {
+        display: flex;
+    }
+    article {
+        @include border-styling(black, green);
+        &:nth-child(odd) {
+            color: blue;
+        }
+        &:nth-child(even) {
+            color: red;
+        }
+    }
+    .footer {
+        @include border-styling(green, blue, 24px);
+        margin-top: 15px;
+    }
+}
