@@ -1,0 +1,225 @@
+.exercise-container {
+    border: 1px solid red;
+    padding: 0.625rem;
+  }
+  .exercise-container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .exercise {
+    display: flex;
+  }
+  .exercise-footer p {
+    color: green;
+    border: 0.0625rem solid blue;
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-underline-offset: 0.375rem;
+  }
+  
+  h2 {
+    padding: 1rem;
+    border: 1px solid red;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .exercise article:nth-child(even) {
+    color: red;
+    border: 0.0625rem solid green;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .exercise article:nth-child(odd) {
+    color: blue;
+    border: 0.0625rem solid green;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.9375rem;
+  }
+  
+  .boxes div:nth-child(1) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #f2f2f2;
+    color: #0d0d0d;
+  }
+  
+  .boxes div:nth-child(2) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #e6e6e6;
+    color: #1a1a1a;
+  }
+  
+  .boxes div:nth-child(3) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #d9d9d9;
+    color: #262626;
+  }
+  
+  .boxes div:nth-child(4) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #cccccc;
+    color: #333333;
+  }
+  
+  .boxes div:nth-child(5) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #bfbfbf;
+    color: #404040;
+  }
+  
+  .boxes div:nth-child(6) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #b3b3b3;
+    color: #4d4d4d;
+  }
+  
+  .boxes div:nth-child(7) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #a6a6a6;
+    color: #595959;
+  }
+  
+  .boxes div:nth-child(8) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #999999;
+    color: #666666;
+  }
+  
+  .boxes div:nth-child(9) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #8c8c8c;
+    color: #737373;
+  }
+  
+  .boxes div:nth-child(10) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: gray;
+    color: gray;
+  }
+  
+  .boxes div:nth-child(10) {
+    color: red;
+    background-color: blue;
+  }
+  
+  .boxes div:nth-child(11) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #737373;
+    color: #8c8c8c;
+  }
+  
+  .boxes div:nth-child(12) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #666666;
+    color: #999999;
+  }
+  
+  .boxes div:nth-child(13) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #595959;
+    color: #a6a6a6;
+  }
+  
+  .boxes div:nth-child(14) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #4d4d4d;
+    color: #b3b3b3;
+  }
+  
+  .boxes div:nth-child(15) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #404040;
+    color: #bfbfbf;
+  }
+  
+  .boxes div:nth-child(16) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #333333;
+    color: #cccccc;
+  }
+  
+  .boxes div:nth-child(17) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #262626;
+    color: #d9d9d9;
+  }
+  
+  .boxes div:nth-child(18) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #1a1a1a;
+    color: #e6e6e6;
+  }
+  
+  .boxes div:nth-child(19) {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border: 1px solid red;
+    background-color: #0d0d0d;
+    color: #f2f2f2;
+  }
+  
+  .fs-1rem {
+    font-size: 1rem;
+  }
+  
+  .fs-2rem {
+    font-size: 2rem;
+  }
+  
+  .fs-3rem {
+    font-size: 3rem;
+  }
+  
+  /*# sourceMappingURL=style.css.map */

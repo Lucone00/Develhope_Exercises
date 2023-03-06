@@ -1,0 +1,82 @@
+@use"module";
+.exercise-container{
+    border: 1px solid module.$color;
+    padding: module.variables(10);
+
+    &-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         }
+}
+ .exercise{
+    display: flex;
+    
+  &-footer p{
+    color: module.$border-color;
+    border: module.variables(1)solid module.$blue;
+    padding:module.variables(20);
+    font-size: module.variables(24);
+    text-align: center;
+} 
+}
+
+
+h1{
+    color: module.$color;
+    text-decoration: underline;
+    text-decoration-color: module.$blue;
+    text-underline-offset: module.variables(6);
+   
+}
+h2{
+    @extend h1;
+    padding: 1rem;
+    border:1px solid module.$color;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.exercise article:nth-child(even){
+ color: module.$color;
+ border: module.variables(1) solid module.$border-color;
+  font-size: module.variables(24);
+  text-align:center;
+}
+.exercise article:nth-child(odd){
+   color:  module.$blue;
+    border: module.variables(1) solid module.$border-color;
+    font-size:  module.variables(24);
+    text-align:center;
+  }
+.boxes{
+  display: flex;
+  justify-content: space-between;
+  margin-top: module.variables(15);
+}
+
+
+@for $i from 1 through 19{
+  .boxes div:nth-child(#{$i}) {
+    width: module.variables(45);
+  height: module.variables(45);
+  border: 1px solid module.$color;
+  background-color:darken(#ffffff,$i * 5%);
+  color: lighten(#000000, $i * 5%);
+  }
+
+  @if $i == 10{
+    .boxes div:nth-child(#{$i}){
+      color: module.$color;
+      background-color: module.$blue ;
+    }
+  }
+}
+$sizes: 1rem, 2rem, 3rem;
+@each $size in $sizes {
+.fs-#{$size}{
+  font-size: $size;
+    
+}
+}
