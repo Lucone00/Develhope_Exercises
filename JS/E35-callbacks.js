@@ -4,7 +4,7 @@ execute the callback function with an interval of 1 second. The callback functio
 be an arrow function, can you also explain why? */
 
 function repeatHello(callback) {
-    setTimeout(callback, 1000)
+    setInterval(callback, 1000)
 }
 
 repeatHello(() => {
