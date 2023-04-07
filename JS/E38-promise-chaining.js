@@ -6,7 +6,30 @@
    Once this is done, try to chain the promises to eventually return the final object {name: "John", age: 24}
 
 const isLogged = true; */
+
 const isLogged = true;
-const myPromise = new Promise ((resolve, reject) => {
-   
-})
+
+function myPromise() {
+  return new Promise((resolve, reject) => {
+    if (isLogged) {
+      resolve(Math.random());
+    } else {
+      reject(new Error("sorry, error"));
+    }
+  });
+}
+
+function findNumber(number) {
+  return new Promise((resolve, reject) => {
+    if (number > 0.5) {
+      resolve({ name: "John", age: 24 });
+    } else {
+      reject(new Error("Number parameter must be greater than 0.5"));
+    }
+  });
+}
+
+myPromise()
+  .then((randomNumber) => findNumber(randomNumber))
+  .then((data) => console.log(data))
+  .catch((error) => console.error(error));
