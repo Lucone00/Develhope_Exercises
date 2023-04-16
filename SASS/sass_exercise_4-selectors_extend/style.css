@@ -7,12 +7,14 @@
   text-align: center;
 }
 .container .title, .container .title_subtitle {
-  text-decoration: underline blue;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
   color: green;
 }
 .container .title_subtitle {
   padding: 1rem;
   border: 1px solid red;
+  width: -moz-fit-content;
   width: fit-content;
   margin: auto;
   margin-bottom: 2rem;
@@ -39,6 +41,4 @@
   font-size: 1.5rem;
   padding: 1rem;
   margin-top: 0.9375rem;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

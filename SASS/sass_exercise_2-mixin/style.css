@@ -7,7 +7,8 @@
   text-align: center;
 }
 .container h1 {
-  text-decoration: 1px underline blue;
+  -webkit-text-decoration: 1px underline blue;
+          text-decoration: 1px underline blue;
   color: green;
 }
 .container section:nth-child(2) {
@@ -31,6 +32,4 @@
   font-size: 24px;
   padding: 10px;
   margin-top: 15px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

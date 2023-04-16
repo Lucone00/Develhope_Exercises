@@ -5,7 +5,8 @@
 }
 .container h1 {
   color: green;
-  text-decoration: 1px underline blue;
+  -webkit-text-decoration: 1px underline blue;
+          text-decoration: 1px underline blue;
   text-align: center;
 }
 
@@ -25,6 +26,4 @@ section article:nth-child(odd) {
 }
 section article:nth-child(even) {
   color: red;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
