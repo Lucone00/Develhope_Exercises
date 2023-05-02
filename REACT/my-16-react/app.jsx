@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Welcome name="Luca" />
-      <Counter increment = {1} interval = {1000}/>
+      <Counter />
     </div>
   );
 }
