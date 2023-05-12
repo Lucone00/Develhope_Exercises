@@ -1,40 +1,37 @@
 import React, { useState, useRef } from "react";
 
 function TodoList() {
-  const initialValue = '';
-  const [items, setItems] = useState([]);
-  const newItemInput = useRef();
+  const [list, setList] = useState([]);
+  const [input, setInput] = useState("");
 
-  const [reset, setReset] = useState("");
-  let clearList = useRef("");
-
-  const addItem = () => {
-    const newItem = newItemInput.current.value;
-    setItems([...items, newItem]);
-    newItemInput.current.value = "";
+  const addTodo = (todo) => {
+    const newTodo = {
+      id: Math.random(),
+      todo: todo,
+    };
+    setList([...list, newTodo]);
+    setInput("");
   };
 
-  const setResetHandler = () => {
-    setItems([...reset]);
-    clearList.current = [];
+  const handleInputChange = (event) => {
+    setInput(event.target.value);
   };
 
+  const handleReset = () => {
+    setList([]);
+  };
   return (
-    
-    <div>
+    <>
+      <h1>TodoList</h1>
+      <input type="text" value={input} onChange={handleInputChange} />
+      <button onClick={() => addTodo(input)}>Add</button>
+      <button onClick={handleReset}>Reset</button>
       <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
+        {list.map((todo) => (
+          <li key={todo.id}>{todo.todo}</li>
         ))}
       </ul>
-
-      <div>
-        <input type="text" ref={newItemInput} />
-        <button onClick={addItem}>Add item</button>
-        <button type="button" onClick={setResetHandler}> Reset </button>
-      </div>
-    </div>
-    
+    </>
   );
 }
 
