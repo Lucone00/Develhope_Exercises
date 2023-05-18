@@ -13,7 +13,7 @@ export const useForm = () => {
     e.preventDefault();
     let values = {
       username: data.username,
-      pass: data.pass,
+      password: data.password,
     };
     console.log(values);
   };
