@@ -21,11 +21,11 @@ function GithubUserList() {
           <ul>
             <li index={index}>
               <Link to={element}>{element}</Link>
+              <Outlet />
             </li>
           </ul>
         );
       })}
-      <Outlet />
     </div>
   );
 }

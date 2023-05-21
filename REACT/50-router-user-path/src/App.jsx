@@ -8,12 +8,12 @@ function App() {
       <>
       <Routes>
             <Route path="list" element={<GithubUserList/>}>
-              <Route path=":username" element={<ShowGithubUser/>}/>
+              <Route path="/:username" element={<ShowGithubUser/>}/>
+              <Outlet/>
             </Route>
           </Routes>
           <p><Link to="list">List</Link></p>
           <p><Link to="list/Lucone00">My Github profile</Link></p>
-          <Outlet/>
       </>
     </Router>
   );

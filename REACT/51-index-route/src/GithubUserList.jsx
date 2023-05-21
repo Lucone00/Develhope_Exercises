@@ -7,7 +7,8 @@ function GithubUserList() {
   const [user, setUser] = useState("");
   const [input, setInput] = useState([]);
 
-  const handleChangeInput = () => {
+  const handleChangeInput = (e) => {
+    e.preventDefault()
     setInput([...input, user]);
     setUser("");
   };
@@ -20,8 +21,8 @@ function GithubUserList() {
       {input.map((element, index) => {
         return (
           <ul>
-            <li index={index}>
-              <GithubUser username={user} />
+            <li key={index}>
+              <Link to={element}>{element}</Link>
             </li>
           </ul>
         );

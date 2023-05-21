@@ -20,7 +20,7 @@ useEffect(() => {
     }
   }
   fetchData();
-}, [username]);
+}, []);
 
 return (
     <div>
