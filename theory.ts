@@ -78,3 +78,24 @@ const user = {
 };
 if (user.ruolo == Ruolo.admin) {
 }
+
+//Interface
+
+interface Prova {
+  nome: string;
+  saluta(): void;
+}
+
+type Provaa = {
+  nome: string;
+  saluta();
+};
+
+// Generics
+
+const arr: Array<string> = ["ecrv", "dev"];
+
+function creaArray<T extends string | number>(items: T[]): T[] {
+  return new Array().concat(items);
+}
+const arr1 = creaArray<string | number>(["q", "e", "r", 9]);
