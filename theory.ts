@@ -99,3 +99,32 @@ function creaArray<T extends string | number>(items: T[]): T[] {
   return new Array().concat(items);
 }
 const arr1 = creaArray<string | number>(["q", "e", "r", 9]);
+
+//Classi
+
+class Classe {
+  constructor(private readonly nome: string, private cognome: string) {
+    this.nome = nome;
+    this.cognome = cognome;
+  }
+  presenta(): void {
+    console.log(`ciao sono ${this.nome}, ${this.cognome}`);
+  }
+  saluta(classe: Classe): void {
+    console.log(`ciao nome cognme, molto piacere`);
+  }
+}
+
+let classe: Classe = new Classe("luca", "rossi");
+let classe2: Classe = new Classe("marco", "verdi");
+let classe3: Classe = new Classe("anna", "neri");
+
+classe.presenta();
+classe2.saluta(classe);
+
+class Studente extends Classe {
+  constructor(nome: string, cognome: string, private materia: string) {
+    super(nome, cognome);
+  }
+}
+const studente: Studente = new Studente("luca", "rossi",'storia');
