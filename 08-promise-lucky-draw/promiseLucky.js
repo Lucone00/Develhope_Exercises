@@ -16,17 +16,11 @@ luckyDraw("Joe")
   .then((data) => {
     console.log(data);
   })
-  .catch((error) => {
-    console.error(error.message);
-  })
   .then(() => {
     return luckyDraw("Caroline");
   })
   .then((data) => {
     console.log(data);
-  })
-  .catch((error) => {
-    console.error(error.message);
   })
   .then(() => {
     return luckyDraw("Sabrina");
