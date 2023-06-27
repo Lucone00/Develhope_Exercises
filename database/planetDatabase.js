@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-const {getAllPlanets} = require('./controllers/newController')
 
-app.get('/', getAllPlanets)
+const { getAllPlanets, getSinglePlanet, createPlanet } = require("./server");
 
+app.get("/", getAllPlanets);
 
-app.listen(port, () =>{
-    console.log('listening')
-})
+app.listen(3000, () => {
+  console.log("listening on 3000");
+});

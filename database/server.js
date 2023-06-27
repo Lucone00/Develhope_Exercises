@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const pgPromise = require("pg-promise");
 
-const db = pgPromise()("postgresql://AlfioPaffo30@host:5432/mydatabase");
+const db = pgPromise()("psql://postgres:postgres@localhost:5432/postgres");
 
 const createTable = async () => {
   await db.none(`DROP TABLE IF EXISTS mydatabase;
@@ -33,8 +33,9 @@ const createPlanet = async (req, res) => {
   await db.none(`INSERT INTO planets (name) VALUES ($1) ($2)`, [name]);
   res.status(201).send("Planet creation successfully");
 };
+
 app.listen(3000, () => {
-  console.log("listening");
+  console.log("listening on 3000");
 });
 
 module.exports = {getAllPlanets, getSinglePlanet, createPlanet}
